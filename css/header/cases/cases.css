@@ -4,12 +4,12 @@
 
 .header__left-case {
     width: 50%;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .header__right-case {
     width: 50%;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
 }
 
 .header__case-number {
@@ -60,4 +60,33 @@
 
 .header__case-sign-up-button:hover {
     background: #4b4b4b;
+}
+
+@media only screen and (max-device-width:480px) {
+    .header__left-case {
+        margin-bottom: 10px;
+        padding-right: 0;
+    }
+    .header__right-case {
+        padding-right: 0;
+    }
+    .header__facebook-like-block {
+        margin: 5px 0px 5px 2px;
+    }
+    .header__case-sign-up-button,
+    .header__case-sign-up {
+        clear: both;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (device-width:768px){
+    .header__left-case {
+        margin-bottom: 10px;
+        padding-right: 0;
+    }
+    .header__right-case {
+        padding-right: 0;
+    }
 }

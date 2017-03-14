@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -14,64 +15,88 @@
     <link href="css/text-color/text-color.css" rel="stylesheet">
     <link href="css/header/header.css" rel="stylesheet">
     <link href="css/header/cases/cases.css" rel="stylesheet">
+    <link href="css/content/content.css" rel="stylesheet">
     <link href="css/footer/footer.css" rel="stylesheet">
+    <link href="css/full-width-slider/full-width-slider.css" rel="stylesheet">
+    <link href="css/responsive/responsive.css" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="wrapper">
-    <header class="header">
-        <div class="header__logo"><img src="img/logo.png" alt="Ventana BIG SUR limited time Offers"></div>
-        <div class="header__sub-title">Ventana BIG SUR limited time Offers</div>
-        <div class="header__main-title text-color_black-gray">only two days 12h 59m left</div>
-        <div class="header__description text-color_orange">
-            Escape to a <span class="text-bold">Weekend Getaway</span> in <span class="text-bold">Big Sur</span>
-        </div>
-        <div class="header__cases">
-            <div class="header__left-case float-left">
-                <div class="header__case-number block-color_orange text-color_white inline-block vertical-align_middle">1</div>
-                <div class="header__case-description text-color_almost-black inline-block vertical-align_middle">
-                    Like us on Facebook:
-                </div>
-                <div class="header__facebook-like-block inline-block vertical-align_middle">
-                    <div class="fb-like" data-href="https://www.hebsdigital.com/"
-                         data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-                </div>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo"><img src="img/logo.svg" alt="Ventana BIG SUR limited time Offers"></div>
+            <div class="header__sub-title">Ventana BIG SUR limited time Offers</div>
+            <div class="header__main-title text-color_black-gray">only two days 12h 59m left</div>
+            <div class="header__description text-color_orange">
+                Escape to a <span class="text-bold">Weekend Getaway</span> in <span class="text-bold">Big Sur</span>
             </div>
-            <div class="header__right-case float-right">
-                <div class="header__case-number block-color_orange text-color_white inline-block vertical-align_middle">2</div>
-                <div class="header__case-description text-color_almost-black inline-block vertical-align_middle">
-                    Sign Up and We can
-                    send Your Promo Code
+            <div class="header__cases">
+                <div class="header__left-case col col-6">
+                    <div class="header__case-number block-color_orange text-color_white inline-block vertical-align_middle">1</div>
+                    <div class="header__case-description text-color_almost-black inline-block vertical-align_middle">
+                        Like us on Facebook:
+                    </div>
+                    <div class="header__facebook-like-block inline-block vertical-align_middle">
+                        <div class="fb-like" data-href="https://www.hebsdigital.com/"
+                             data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                    </div>
                 </div>
-                <div class="header__case-sign-up float-right">
-                    <a href="#" class="header__case-sign-up-button block-color_orange text-color_white">sign up</a>
+                <div class="header__right-case col col-6">
+                    <div class="header__case-number block-color_orange text-color_white inline-block vertical-align_middle">2</div>
+                    <div class="header__case-description text-color_almost-black inline-block vertical-align_middle">
+                        Sign Up and We can
+                        send Your Promo Code
+                    </div>
+                    <div class="header__case-sign-up float-right">
+                        <a href="#" class="header__case-sign-up-button block-color_orange text-color_white">sign up</a>
+                    </div>
+                    <div class="clear-float"></div>
                 </div>
                 <div class="clear-float"></div>
             </div>
-            <div class="clear-float"></div>
+        </header>
+    </div>
+
+    <div class="content">
+        <div id="full-width-slider" class="full-width-slider">
+            <div data-u="loading" class="full-width-slider__oval">
+                <img class="full-width-slider__oval-image" src="img/oval.svg" />
+            </div>
+            <div data-u="slides" class="full-width-slider__slides">
+                <div class="full-width-slider__slide">
+                    <img data-u="image" src="img/slide_1.jpg" />
+                </div>
+                <div class="full-width-slider__slide">
+                    <img data-u="image" src="img/slide_2.jpg" />
+                </div>
+                <div class="full-width-slider__slide">
+                    <img data-u="image" src="img/slide_3.jpg" />
+                </div>
+            </div>
+            <div data-u="navigator" class="full-width-slider__navigator" data-autocenter="1">
+                <div data-u="prototype" class="full-width-slider__prototype"></div>
+            </div>
         </div>
-    </header>
-
-    <main class="content">
-
-    </main>
+    </div>
 </div>
 
 <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper container">
         <div class="footer__menu text-center">
-            <a href="#" class="footer__menu_link text-color_white">Home</a>
-            <a href="#" class="footer__menu_link text-color_white">OUR HOTEL</a>
-            <a href="#" class="footer__menu_link text-color_white">SPECIALS & PACKAGES</a>
-            <a href="#" class="footer__menu_link text-color_white">CONTACT US</a>
+            <a href="#" class="footer__menu_link text-color_white col col-3">Home</a>
+            <a href="#" class="footer__menu_link text-color_white col col-3">OUR HOTEL</a>
+            <a href="#" class="footer__menu_link text-color_white col col-3">SPECIALS & PACKAGES</a>
+            <a href="#" class="footer__menu_link text-color_white col col-3">CONTACT US</a>
+            <div class="clear-float"></div>
         </div>
 
         <div class="footer__social text-center">
-            <a href="#" class="footer__social_link"><img src="img/soc_1.png" alt=""></a>
-            <a href="#" class="footer__social_link"><img src="img/soc_2.png" alt=""></a>
-            <a href="#" class="footer__social_link"><img src="img/soc_3.png" alt=""></a>
-            <a href="#" class="footer__social_link"><img src="img/soc_4.png" alt=""></a>
+            <a href="#" class="footer__social_link"><img src="img/soc_1.svg" alt=""></a>
+            <a href="#" class="footer__social_link"><img src="img/soc_2.svg" alt=""></a>
+            <a href="#" class="footer__social_link"><img src="img/soc_3.svg" alt=""></a>
+            <a href="#" class="footer__social_link"><img src="img/soc_4.svg" alt=""></a>
         </div>
         <div class="footer__copyright text-color_light-gray text-center">
             Hotel Website Design & Full-Service Hotel Internet Marketing by
@@ -79,6 +104,10 @@
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/full-width-slider/full-width-slider.min.js"></script>
+    <script src="js/full-width-slider/full-width-slider-init.js"></script>
+    <script src="js/main.js"></script>
 </footer>
 
 <div id="fb-root"></div>

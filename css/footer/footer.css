@@ -1,8 +1,8 @@
 .footer {
     background: #1a1818;
     width: 100%;
-    margin: -177px auto 0;
-    height: 177px;
+    /*margin: -177px auto 0;*/
+    /*height: 177px;*/
     position: relative;
     padding: 35px 0;
 }
@@ -22,7 +22,6 @@
 }
 
 .footer__wrapper {
-    width: 960px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -36,16 +35,22 @@
     font-family: Arial, sans-serif;
 }
 
-.footer__social_link {
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-}
-
 .footer__social_link:hover {
     opacity: 0.7;
 }
 
 .footer__copyright a:hover {
     text-decoration: none;
+}
+
+@media only screen and (max-device-width:480px) {
+    .footer__menu_link {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (device-width:768px){
+    .footer__menu_link {
+        margin-bottom: 10px;
+    }
 }
