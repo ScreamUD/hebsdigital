@@ -1,4 +1,114 @@
 .content {
-    /*padding: 0 0 177px;*/
     position: relative;
+    background: #1a1818;
+}
+
+.content__block-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    background: url(../../img/content-opacity.png);
+    padding: 30px 0 35px;
+}
+
+.content__block {
+}
+
+.content__title {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.content__row {
+    position: relative;
+}
+
+.content__text,
+.content__list-title {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.content__list ul {
+    padding-left: 15px;
+}
+
+.content__list ul li {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.content__share {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.content__share_link_underline a {
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.content__share_link_underline a:hover {
+    text-decoration: none;
+}
+
+.content__share_button {
+}
+
+.content__share_button a {
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    width: 205px;
+    display: block;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    box-shadow: 0 1px 2px 0 #1d1d1d;
+    -webkit-box-shadow: 0 1px 2px 0 #1d1d1d;
+    -moz-box-shadow: 0 1px 2px 0 #1d1d1d;
+    text-decoration: none;
+}
+
+.content__share_button a:hover {
+    background: #4b4b4b;
+}
+
+@media (max-width:480px) {
+    .content__block-wrapper,
+    .content__share {
+        position: relative;
+    }
+
+    .content__share {
+        text-align: center;
+    }
+
+    .content__share_link_underline a {
+        margin-right: 0;
+    }
+
+    .content__share_link_underline {
+        margin: 20px 0;
+    }
+
+    .content__share_button,
+    .content__share_button a {
+        width: 100%;
+    }
+}
+
+@media (max-width:958px) {
+    .content__share {
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+    }
 }

@@ -1,8 +1,7 @@
 .footer {
     background: #1a1818;
     width: 100%;
-    /*margin: -177px auto 0;*/
-    /*height: 177px;*/
+    height: 177px;
     position: relative;
     padding: 35px 0;
 }
@@ -43,14 +42,22 @@
     text-decoration: none;
 }
 
-@media only screen and (max-device-width:480px) {
+@media (max-width:480px) {
     .footer__menu_link {
         margin-bottom: 10px;
     }
+
+    .footer {
+        height:auto;
+    }
 }
 
-@media only screen and (device-width:768px){
+@media (max-width:958px) {
     .footer__menu_link {
         margin-bottom: 10px;
+    }
+
+    .footer {
+        height:auto;
     }
 }
